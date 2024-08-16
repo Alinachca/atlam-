@@ -1,0 +1,693 @@
+/* Style for the "STEP-by-STEP PAYMENT OF WORKS" text */
+#payment-text2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px; /* You can adjust the font size as needed */
+    margin-top: 20px; /* Add some space between the texts */
+}
+/* Style for the "STEP-by-STEP PAYMENT OF WORKS" text */
+#payment-text3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px; /* You can adjust the font size as needed */
+    margin-top: 10px; /* Add some space between the texts */
+}
+/* Style for the "STEP-by-STEP PAYMENT OF WORKS" text */
+#payment-text4 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px; /* You can adjust the font size as needed */
+    margin-top: 20px; /* Add some space between the texts */
+}
+/* Style for the "STEP-by-STEP PAYMENT OF WORKS" text */
+#payment-text5 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px; /* You can adjust the font size as needed */
+    margin-top: 20px; /* Add some space between the texts */
+}
+/* Reset some default styling */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f8f8f8 ;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Position the image container */
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the image overlay */
+.image-overlay {
+   position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+   
+ /* Add your additional CSS styles here */
+ .bottom-left-image {
+      bottom: 0;
+      left: 0;
+      max-width: 300px; /* Adjust image width as needed */
+      height: auto;
+    }
+ 	.logo {
+    width: 100px;
+    height: auto;
+    margin: 10px; /* Adjust margin as needed */
+}
+
+
+
+.button-list li {
+    margin-right: 15px;
+}
+.button {
+    display: inline-block;
+    padding: 10px 15px; /* Adjust the padding to make the buttons taller */
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+/* Style for the service info section */
+#service-info {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+#service-info h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#order-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+ /* Add CSS styles to make the text larger */
+        .overlay-text-full {
+            font-size: 100px; /* You can adjust the font size as needed */
+        }
+
+     
+	
+
+        /* Style the text */
+        .centered-text {
+            font-size: 24px; /* You can adjust the font size as needed */
+            text-align: center;
+        }
+
+        /* Style the image container */
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px; /* Add spacing between images and captions */
+        }
+
+        .portfolio-image {
+            max-width: 100%;
+            height: auto;
+        }
+			 
+/* Add CSS styles to make the image small */
+        .bottom-image {
+            max-width: 300px; /* Adjust the maximum width as needed */
+            height: auto;
+        }
+
+        /* Style the image container */
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px; /* Add spacing between images and captions */
+        }
+
+         /* Apply a margin to push the image slightly to the right */
+        .right-image {
+            float: right;
+            max-width: 100px; /* Adjust the maximum width as needed */
+            height: auto;
+        }
+/* Style the text */
+.left-text {
+    text-align: center;
+    margin-right: 20px; /* Adjust the margin as needed */
+    font-weight: bold;
+    color: black;
+    font-size: 15px; /* You can adjust the font size as needed */
+}
+       
+    /* Style the image container */
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px; /* Add spacing between images and captions */
+        }
+  
+ /* Style for the Your Information+ text */
+        #your-information {
+            text-align: center;
+            font-weight: bold;
+            font-size: 36px; /* You can adjust the font size as needed */
+        }
+
+        /* Style for the "INCLUDES THE FOLLOWING OPTIONS:" text */
+        #options-text {
+            text-align: center;
+            font-weight: bold;
+            font-size: 24px; /* You can adjust the font size as needed */
+            margin-top: 20px; /* Add some space between the two texts */
+        }
+
+        /* Style for the image container */
+        #image-container {
+            text-align: center;
+        }
+
+        /* Style for the image */
+        #image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Style for the step-by-step payment text */
+        #payment-text {
+            text-align: center;
+            font-weight: bold;
+            font-size: 28px; /* You can adjust the font size as needed */
+            margin-top: 20px; /* Add some space between the image and text */
+        }		
+		
+ /* Style for the payment text */
+        #payment-text {
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px; /* You can adjust the font size as needed */
+            margin-top: 8px; /* Add some space between the image and text */
+        }
+
+        /* Style for the image container */
+        #image-container {
+            text-align: center;
+            margin-top: 20px; /* Add some space between images and text */
+        }
+
+       /* Style for the images */
+        .bottom-image {
+            max-width: 100%;
+            height: auto;
+            margin: 10px; /* Add some spacing around the images */
+            display: inline-block; /* Display images in a row */
+            width: 250px; /* Set a fixed width for the images */
+        }		
+		/* Style for the preparatory text */
+        .preparatory-text {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 10px; /* Add space between the text and the image */
+        }
+		
+		
+		/* Add CSS styles here */
+        .centered-text {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .medium-image {
+            display: block;
+            margin: 0 auto;
+            max-width: 30%; /* Adjust the maximum width as needed */
+            height: auto;
+        }
+		
+		  /* Add CSS styles here */
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .select-service {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+        }
+		
+		
+
+
+/* Add CSS styles here */
+       .cta-button {
+    display: inline-block;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center; 
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+		
+		    /* Existing styles... */
+
+    /* Styles for the image gallery */
+    .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .gallery-image {
+        margin: 10px;
+        max-width: 30%;
+        height: auto;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+/* Add styles for the language selection buttons */
+#language-selection {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.language-button {
+    background-color:#fff ;
+    color:#000 ;
+    border: 1px solid #000 ;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.language-button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.language-button:hover {
+    background-color: #4169E1;
+    color: #000;
+}
+/* Add this CSS to style the full-width image */
+.full-width-image {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1; /* Place it behind your content */
+}
+
+
+  /* Style for the phone icon button */
+        .phone-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: Black;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            font-size: 24px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .phone-button:hover {
+            background-color: darkblue;
+        }
+		 /* Dropdown button */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: black;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: #f9f9f9;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: 8ac8ff;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+		/* Existing styles... */
+
+.portfolio-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px; /* Add some space at the top */
+    margin-bottom: 10px; /* Adjust margin at the bottom */
+}
+		.container {
+  position: relative;
+}
+
+.bottom-line {
+  width: 500%;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: -200%; /* Adjust this value to position the line to the left */
+  z-index: 1;
+}
+
+.logo-container {
+  position: absolute;
+  bottom: -50px; /* Adjust this value to position the logo at the desired distance above the bottom */
+  left: 9%; /* Position the logo horizontally at the center */
+  transform: translateX(-50%);
+  z-index: 2; /* Ensure the logo appears above the line */
+}
+.logo-bottom {
+  width: 110px; /* Adjust this value to set the desired width for the logo */
+  height: auto; /* Maintain aspect ratio */
+}
+.text-at-bottom {
+  position: absolute;
+  bottom: -30px; /* Adjust this value to set the distance between text and lines */
+  left: 50%; /* Position the text horizontally at the center */
+  transform: translateX(-50%);
+}
+.service {
+  position: absolute;
+  left: 15%;  /* Align the text block to the left */
+  padding-left: 30px; /* Add some padding to the left side */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 2; /* Ensure the text block appears above the line */
+
+  
+  
+}
+.service h2 {
+  text-align: center; /* Center align the heading */
+}
+
+.service ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+   
+}
+
+.service li {
+  margin-bottom: 10px; /* Add some vertical spacing between list items */
+}
+
+.service a {
+  display: block; /* Make links block-level elements */
+  text-decoration: none; /* Remove default underline */
+  color: black; /* Set link color */
+}
+
+.service a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.right-text-bottom {
+  position: absolute;
+  bottom: 10;
+  left: 45%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.right-text-bottom h2 {
+  text-align: center; /* Center align the heading */
+}
+
+.right-text-bottom ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+.right-text-bottom li {
+  margin-bottom: 10px; /* Add some vertical spacing between list items */
+}
+
+.right-text-bottom a {
+  display: block; /* Make links block-level elements */
+  text-decoration: none; /* Remove default underline */
+  color: black; /* Set link color */
+}
+
+.right-text-bottom a:hover {
+  text-decoration: underline; /* Add underline on hover */
+
+}
+.center-text-bottom {
+  position: absolute;
+  bottom: 10; /* Adjust this value to set the distance from the bottom */
+  left: 68%; /* Position the text horizontally at the center */
+  transform: translateX(-50%);
+  z-index: 2; /* Ensure the text appears above the line */
+ display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  }
+.center-text-bottom h2 {
+  text-align: center; /* Center align the heading */
+}
+
+.center-text-bottom ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+.center-text-bottom li {
+  margin-bottom: 10px; /* Add some vertical spacing between list items */
+}
+
+.center-text-bottom a {
+  display: block; /* Make links block-level elements */
+  text-decoration: none; /* Remove default underline */
+  color: black; /* Set link color */
+}
+
+.center-text-bottom a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+.contact-us {
+  position: absolute;
+  bottom: 10; /* Adjust this value to set the distance from the bottom */
+  left: 88%; /* Position the text horizontally at the center */
+  transform: translateX(-50%);
+  z-index: 2; /* Ensure the text appears above the line */
+   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-us h2 {
+  text-align: center; /* Center align the heading */
+}
+
+.contact-us ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+.contact-us li {
+  margin-bottom: 10px; /* Add some vertical spacing between list items */
+}
+
+.contact-us a {
+  display: block; /* Make links block-level elements */
+  text-decoration: none; /* Remove default underline */
+  color: black; /* Set link color */
+}
+
+.contact-us a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}	
+
+
+		@media all  and (max-width:960px) {
+			
+		.logo {
+			
+    width: 70px;
+    height: auto;
+    margin: 10px; /* Adjust margin as needed */
+}
+		
+/* Add styles for the language selection buttons */
+#language-selection {
+    position: absolute;
+    top: 55px;
+    right: 50px;
+}
+
+.language-button {
+    background-color:#fff ;
+    color:#000 ;
+    border: 1px solid #000 ;
+    padding: 5px 10px;
+    margin-left: 0px;
+    cursor: pointer;
+}
+
+.language-button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.language-button:hover {
+    background-color: #4169E1;
+    color: #000;
+}
+		
+	 	 
+@media all and (max-width: 928px) {
+  .button {
+    display: block;
+    margin: 0 auto; /* This centers the block element horizontally */
+    text-align: center; /* This centers the text within the block */
+    padding: 8px 16px; /* Adjust the padding to make the button smaller */
+    font-size: 14px; /* Adjust the font size for smaller buttons */
+  }	
+  @media all and (max-width: 928px) {
+  /* Style the image overlay */
+.image-overlay {
+   position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+  @media all and (max-width: 600px) {
+ /* Add CSS styles to make the text larger */
+        .overlay-text-full {
+            font-size: 60px; /* You can adjust the font size as needed */
+        }
+		 @media all and (max-width: 500px) {
+		 .select-service {
+            width: 100%;
+            padding: 10px;
+            font-size: 10px;
+        }
+		@media all and (max-width: 500px) {
+		.gallery-image {
+        margin: 5px;
+        max-width: 30%;
+        height: auto;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+		

@@ -1,0 +1,84 @@
+/* Reset some default styling */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f8f8f8 ;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+
+
+   
+ /* Add your additional CSS styles here */
+ .bottom-left-image {
+      bottom: 0;
+      left: 0;
+      max-width: 300px; /* Adjust image width as needed */
+      height: auto;
+    }
+ 	.logo {
+    width: 100px;
+    height: auto;
+    margin: 10px; /* Adjust margin as needed */
+}
+/* styles.css */
+.image-container {
+    max-width: 200px; /* Set the maximum width for the container */
+}
+
+#small-image {
+    max-width: 100%; /* Make sure the image doesn't exceed the container width */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+
+
+
+     
+	
+
+       
+			 
+
+        
+   
+                   
+
+        
+       
+        
+		
+		
+
+    
+
+

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contacts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact {
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            cursor: pointer;
+        }
+
+        .contact h2 {
+            margin: 0;
+        }
+
+        .contact p {
+            margin: 0;
+        }
+
+        .glow-blue {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 id="pageTitle1">Contactos</h1>
+    <button onclick="changeLanguage('es')">Español</button>
+    <button onclick="changeLanguage('ca')">Catalán</button>
+    <button onclick="changeLanguage('en')">Inglés</button>
+    <button onclick="changeLanguage('ru')">Ruso</button>
+</header>
+
+<div class="container">
+    <ul class="contact-list">
+        <li class="contact">
+            <h2 id="contactName">Roman</h2>
+            <p id="city">City: (Barcelona)</p>
+            <p id="address">Address: 08028, Barcelona, C Ventura Plaja, 24-26 PBA 1</p>
+            <p id="language">Language: Ukrainian, English</p>
+            <p>Email: <span class="glow-blue" onclick="sendEmail('yakimuk_ap@ukr.net')">yakimuk_ap@ukr.net</span></p>
+            <p>Phone: <a href="tel:+34698528161">+34 698 528 161</a></p>
+        </li>
+        <li class="contact">
+            <h2 id="contactName1">Aleksandr</h2>
+            <p id="city1">City: (Barcelona)</p>
+            <p id="address1">Address: 08028, Barcelona, C Ventura Plaja, 24-26 PBA 1</p>
+            <p>Email: <span class="glow-blue" onclick="sendEmail('yakimuk_ap@ukr.net')">yakimuk_ap@ukr.net</span></p>
+            <p id="language1">Ukrainian, Russian: <a href="tel:+34641857938">+34 641 857 938,</a><a href="tel:+380984636016"> +38 098 463 6016 </a></p>
+            <p id="language2">Ukrainian, Spanish: <a href="tel:+34654311523">+34 654 311 523</a></p>
+        </li>
+        <li class="contact">
+            <h2 id="contactName2">Ruslan</h2>
+            <p id="city2">City: (Valencia-Benidorm)</p>
+            <p id="address2">Language: Ukrainian</p>
+            <p>Email: <span class="glow-blue" onclick="sendEmail('yakimuk_ap@ukr.net')">yakimuk_ap@ukr.net</span></p>
+            <p>Phone: <a href="tel:+34645423010">+34 645 423 010</a></p>
+        </li>
+        <li class="contact">
+            <h2>Alina</h2>
+            <p id="services4">Services: Designer Interior</p>
+            <p>City: (Barcelona)</p>
+            <p>Address: 08028, Barcelona, C Ventura Plaja, 24-26 PBA 1</p>
+            <p>Language: Ukrainian, Russian, Spanish</p>
+            <p>Email: <span class="glow-blue" onclick="sendEmail('yakimuk_ap@ukr.net')">yakimuk_ap@ukr.net</span></p>
+            <p>Email: <span class="glow-blue" onclick="sendEmail('draevaalina9@gmail.com')">draevaalina9@gmail.com</span></p>
+            <p>Phone: <a href="tel:+34617289786">+34 617 289 786</a></p>
+            <p>Telegram: <a href="tel:+380681232343">+380681232343</a></p>
+        </li>
+    </ul>
+</div>
+
+<script>
+    function sendEmail(emailAddress) {
+        window.location.href = 'mailto:' + emailAddress;
+    }
+
+    function changeLanguage(language) {
+        const translations = {
+            'es': {
+                'contactName1': 'Aleksandr',
+                'city1': 'Ciudad: (Barcelona)',
+                'language1': 'Ucraniano, Ruso: <a href="tel:+34641857938">+34 641 857 938,</a><a href="tel:+380984636016"> +38 098 463 6016 </a>',
+                'language2': 'Ucraniano, Español: <a href="tel:+34654311523">+34 654 311 523</a>',
+				'pageTitle': 'Contactos',
+            },
+            'ca': {
+                'contactName1': 'Alexandre',
+                'city1': 'Ciutat: (Barcelona)',
+                'language1': 'Ucraïnès, Rus: <a href="tel:+34641857938">+34 641 857 938,</a><a href="tel:+380984636016"> +38 098 463 6016 </a>',
+                'language2': 'Ucraïnès, Espanyol: <a href="tel:+34654311523">+34 654 311 523</a>'
+				'pageTitle': 'Contactes',
+            },
+            'en': {
+                'contactName1': 'Alexandr',
+                'city1': 'City: (Barcelona)',
+                'language1': 'Ukrainian, Russian: <a href="tel:+34641857938">+34 641 857 938,</a><a href="tel:+380984636016"> +38 098 463 6016 </a>',
+                'language2': 'Ukrainian, Spanish: <a href="tel:+34654311523">+34 654 311 523</a>'
+				'pageTitle': 'Contacts',
+            },
+            'ru': {
+                'contactName1': 'Александр',
+                'city1': 'Город: (Барселона)',
+                'language1': 'Украинский, Русский: <a href="tel:+34641857938">+34 641 857 938,</a><a href="tel:+380984636016"> +38 098 463 6016 </a>',
+                'language2': 'Украинский, Испанский: <a href="tel:+34654311523">+34 654 311 523</a>'
+				'pageTitle': 'Контакты',
+            }
+        };
+
+        // Apply translations
+        Object.keys(translations[language]).forEach(elementId => {
+            const element = document.getElementById(elementId);
+            if (element) {
+                element.innerHTML = translations[language][elementId];
+            }
+        });
+    }
+</script>
+</body>
+</html>
+
+

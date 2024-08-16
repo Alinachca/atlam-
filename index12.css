@@ -1,0 +1,1005 @@
+/* Reset some default styling */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+header {
+    background-color: #f8f8f8 ;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Position the image container */
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the image overlay */
+.image-overlay {
+   position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+
+.overlay-text {
+    font-size: 20px;
+}
+section {
+    padding: 50px;
+    text-align: center;
+}
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.overlay-text-full {
+    font-size: 45px;
+    padding: 20px;
+	
+    border-radius: 5px;
+    max-width: 80%;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+
+
+.dark-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            
+            z-index: -1; /* Place the overlay behind the image */
+        }
+		.overlay-text-1 {
+           bottom: 600px;
+        }
+
+        .overlay-text-2 {
+            bottom: 80px;
+            font-size: 25px; /* Adjust font size for the smaller text */
+            line-height: 1.5; /* Add some spacing between lines */
+			
+			}	
+	.text-center {
+    text-align: center!important;
+ }
+		
+ 
+		.logo {
+    width: 100px;
+    height: auto;
+    margin: 10px; /* Adjust margin as needed */
+}
+ 
+		
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style for the buttons */
+.button-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.button-list li {
+    margin-right: 10px;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.portfolio-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.buttons-container {
+    text-align: center;
+}
+
+.clickable-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease; /* Add a smooth transition */
+}
+
+.clickable-button:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+}
+
+.clickable-button.clicked {
+    background-color: #00ff00; /* Change the background color when clicked */
+}
+
+
+.button-container {
+  text-align: center;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.price-button {
+  padding: 10px 20px;
+  background-color: #000000; /* Change the button color as needed */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px; /* Adjust the margin as needed */
+}
+
+.price-button:hover {
+  background-color: #0056b3; /* Change the hover color as needed */
+}
+        .price-button {
+            background-color: ; /* Set the button background color */
+            color: #fff; /* Set the text color to white */
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Style for the selected button */
+        .selected-button {
+            background-color: #0056b3; /* Set the selected button background color */
+		}	
+       /* Style for the select dropdown */
+        .select-service {
+            width: 10%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+		/* Style for the text */
+        .bold-black-text {
+            font-weight: bold;
+            color: black;
+        }
+		
+		/* Style for the form group */
+        .form-group {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Style for the label */
+        .form-group label {
+            font-weight: bold;
+            color: black;
+        }
+
+        /* Style for the select */
+        .select-service {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+		
+		
+		
+		/* Style for the image container */
+        .image-container {
+            text-align: center;
+        }
+
+        /* Style for the image */
+        .comparison-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Style for the text */
+        .comparison-text {
+            font-weight: bold;
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px;
+            color: black;
+        }
+		#order-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+/* Style for the service info section */
+#service-info {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+#service-info h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#order-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta-button {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.cta-button:hover {
+    background-color:  #0056b3;
+}
+
+
+
+/* Center text horizontally and vertically */
+#visual-comparison {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh; /* Adjust the height as needed */
+}
+
+.center-text {
+    text-align: center;
+}
+
+
+
+
+/* Styles for the container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    text-align: center;
+}
+
+/* Styles for the buttons */
+.button-container {
+    margin-top: 20px;
+}
+
+.custom-button {
+    padding: 10px 20px;
+    background-color:#0074d9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.custom-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Styles for the slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    width: 10%;
+}
+
+/* Styles for the buttons */
+.button-container {
+    margin-top: 20px;
+}
+
+.custom-button {
+    padding: 10px 20px;
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.custom-button:hover {
+    background-color:#000000  ;
+}
+
+/* Add styles for the language selection buttons */
+#language-selection {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.language-button {
+    background-color:#fff ;
+    color:#000 ;
+    border: 1px solid #000 ;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.language-button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.language-button:hover {
+    background-color: #4169E1;
+    color: #000;
+}
+
+
+/* Add this CSS to style the full-width image */
+.full-width-image {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1; /* Place it behind your content */
+}
+  /* Style for the phone icon button */
+        .phone-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: Black;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            font-size: 24px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .phone-button:hover {
+            background-color: darkblue;
+        } 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		/* Reset some default styling */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+header {
+    background-color: #f8f8f8 ;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Position the image container */
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the image overlay */
+.image-overlay {
+   position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+
+.overlay-text {
+    font-size: 20px;
+}
+section {
+    padding: 50px;
+    text-align: center;
+}
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.overlay-text-full {
+    font-size: 45px;
+    padding: 20px;
+	
+    border-radius: 5px;
+    max-width: 80%;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+
+
+.dark-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            
+            z-index: -1; /* Place the overlay behind the image */
+        }
+		.overlay-text-1 {
+           bottom: 600px;
+        }
+
+        .overlay-text-2 {
+            bottom: 80px;
+            font-size: 25px; /* Adjust font size for the smaller text */
+            line-height: 1.5; /* Add some spacing between lines */
+			
+			}	
+	.text-center {
+    text-align: center!important;
+ }
+		
+ 
+		.logo {
+    width: 100px;
+    height: auto;
+    margin: 10px; /* Adjust margin as needed */
+}
+ 
+		
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style for the buttons */
+.button-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.button-list li {
+    margin-right: 10px;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.portfolio-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.buttons-container {
+    text-align: center;
+}
+
+.clickable-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease; /* Add a smooth transition */
+}
+
+.clickable-button:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+}
+
+.clickable-button.clicked {
+    background-color: #00ff00; /* Change the background color when clicked */
+}
+
+
+.button-container {
+  text-align: center;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.price-button {
+  padding: 10px 20px;
+  background-color: #000000; /* Change the button color as needed */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px; /* Adjust the margin as needed */
+}
+
+.price-button:hover {
+  background-color: #0056b3; /* Change the hover color as needed */
+}
+        .price-button {
+            background-color: ; /* Set the button background color */
+            color: #fff; /* Set the text color to white */
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Style for the selected button */
+        .selected-button {
+            background-color: #0056b3; /* Set the selected button background color */
+		}	
+       /* Style for the select dropdown */
+        .select-service {
+            width: 10%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+		/* Style for the text */
+        .bold-black-text {
+            font-weight: bold;
+            color: black;
+        }
+		
+		/* Style for the form group */
+        .form-group {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Style for the label */
+        .form-group label {
+            font-weight: bold;
+            color: black;
+        }
+
+        /* Style for the select */
+        .select-service {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+		
+		
+		
+		/* Style for the image container */
+        .image-container {
+            text-align: center;
+        }
+
+        /* Style for the image */
+        .comparison-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Style for the text */
+        .comparison-text {
+            font-weight: bold;
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px;
+            color: black;
+        }
+		#order-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+/* Style for the service info section */
+#service-info {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+#service-info h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#order-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta-button {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.cta-button:hover {
+    background-color:  #0056b3;
+}
+
+
+
+/* Center text horizontally and vertically */
+#visual-comparison {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh; /* Adjust the height as needed */
+}
+
+.center-text {
+    text-align: center;
+}
+
+
+
+
+/* Styles for the container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    text-align: center;
+}
+
+/* Styles for the buttons */
+.button-container {
+    margin-top: 20px;
+}
+
+.custom-button {
+    padding: 10px 20px;
+    background-color:#0074d9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.custom-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Styles for the slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+}
+  }
+img {
+    width: 100%;
+
+/* Styles for the buttons */
+.button-container {
+    margin-top: 20px;
+}
+
+.custom-button {
+    padding: 10px 20px;
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.custom-button:hover {
+    background-color:#000000  ;
+}
+
+/* Add styles for the language selection buttons */
+#language-selection {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.language-button {
+    background-color:#fff ;
+    color:#000 ;
+    border: 1px solid #000 ;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.language-button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.language-button:hover {
+    background-color: #4169E1;
+    color: #000;
+}
+
+
+/* Add this CSS to style the full-width image */
+.full-width-image {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1; /* Place it behind your content */
+}
+  /* Style for the phone icon button */
+        .phone-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: Black;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            font-size: 24px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .phone-button:hover {
+            background-color: darkblue;
+        }
+		
+		
+		id="averageBtn
+		
+		
+		
+		
+		
+		
+		
+		var translatedTexts = {
+    'es': {
+        'perfect-solution': 'LA SOLUCIÓN PERFECTA PARA LOS MÁS',
+        'demanding-customers': 'CLIENTES EXIGENTES.',
+        'evaluate-services': 'Evaluar servicios y soluciones de reparación de alto nivel utilizando',
+        'high-quality-materials': 'materiales de alta calidad con total transparencia',
+        'without-accusations': 'y sin acusaciones inesperadas.'
+    },
+    'ca': {
+        'perfect-solution': 'LA SOLUCIÓ PERFECTA PER ALS MÉS',
+        'demanding-customers': 'CLIENTS EXIGENTS.',
+        'evaluate-services': 'Avaluar serveis i solucions de reparació de nivell superior utilitzant',
+        'high-quality-materials': 'materials de qualitat amb total transparència',
+        'without-accusations': 'i sense acusacions inesperades.'
+    },
+'en': {
+ 'perfect-solution': 'THE PERFECT SOLUTION FOR THE MOST',
+ 'demanding-customers': 'DEMANDING CUSTOMERS.',
+ 'evaluate-services': 'Evaluate top-level services and repair solutions using',
+ 'high-quality-materials': 'high-quality materials with full transparency',
+ 'without-accusations': 'and without unexpected accusations.'
+},
+
+
+    },
+    'ru': {
+        'perfect-solution': 'ИДЕАЛЬНОЕ РЕШЕНИЕ ДЛЯ САМЫХ',
+        'demanding-customers': 'ТРЕБОВАТЕЛЬНЫХ КЛИЕНТОВ.',
+        'evaluate-services': 'Оцените услуги высшего уровня и решения по ремонту с использованием',
+        'high-quality-materials': 'материалов высокого качества с полной прозрачностью',
+        'without-accusations': 'и без неожиданных обвинений.'
+    }
+};
+
+// Update content inside the left-text div based on the selected language
+var language = 'en';  // Default language
+document.getElementById('perfect-solution').textContent = translatedTexts[language]['perfect-solution'];
+document.getElementById('demanding-customers').textContent = translatedTexts[language]['demanding-customers'];
+document.getElementById('evaluate-services').textContent = translatedTexts[language]['evaluate-services'];
+document.getElementById('high-quality-materials').textContent = translatedTexts[language]['high-quality-materials'];
+document.getElementById('without-accusations').textContent = translatedTexts[language]['without-accusations'];
+
+var translatedButtons = {
+    'es': {
+        'order-service': 'Solicitar servicio',
+        'alta-color-works': 'Trabajos de ALTA COLOR',
+        'calculator': 'Calculadora',
+        'call-manager': 'LLAMAR AL GERENTE'
+    },
+    'ca': {
+        'order-service': 'Sol·licitar servei',
+        'alta-color-works': 'Treballs d\'ALTA COLOR',
+        'calculator': 'Calculadora',
+        'call-manager': 'TRUCAR AL GERENT'
+    },
+    'en': {
+        'order-service': 'Order Service',
+        'alta-color-works': 'Works from ALTA COLOR',
+        'calculator': 'Calculator',
+        'call-manager': 'CALL MANAGER'
+    },
+    'ru': {
+        'order-service': 'Заказать услугу',
+        'alta-color-works': 'Работы от ALTA COLOR',
+        'calculator': 'Калькулятор',
+        'call-manager': 'ПОЗВОНИТЬ МЕНЕДЖЕРУ'
+    }
+};
+
+// Update button text based on the selected language
+document.getElementById('order-service').textContent = translatedButtons[language]['order-service'];
+document.getElementById('alta-color-works').textContent = translatedButtons[language]['alta-color-works'];
+document.getElementById('calculator').textContent = translatedButtons[language]['calculator'];
+document.getElementById('call-manager').textContent = translatedButtons[language]['call-manager'];
+document.addEventListener('DOMContentLoaded', function () {
+

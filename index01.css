@@ -1,0 +1,439 @@
+/* Reset some default styling */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+header {
+    background-color: #f8f8f8 ;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Position the image container */
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the image overlay */
+.image-overlay {
+   position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+/* ... (remaining code) ... */
+/* ... (previous code) ... */
+
+
+
+
+.overlay-text-full {
+    font-size: 45px;
+    padding: 20px;
+	
+    border-radius: 5px;
+    max-width: 80%;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+		.logo {
+    width: 100px;
+    height: auto;
+    margin: 10px; /* Adjust margin as needed */
+}		
+  /* Adjust the font size as needed */
+        }
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style for the buttons */
+.button-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.button-list li {
+    margin-right: 10px;
+}
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+/* Add styles for the language selection buttons */
+#language-selection {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.language-button {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #4169E1;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.center-text {
+    text-align: center;
+}
+
+#work-text {
+    font-weight: bold;
+    font-size: 24px;
+}
+/* styles.css */
+.center-text {
+    text-align: center;
+}
+
+#work-text {
+    font-weight: bold;
+    font-size: 24px;
+}
+/* styles.css */
+/* Rest of your CSS styles for other elements */
+/* Add CSS styles here */
+        .cta-button {
+            display: inline-block;
+            background-color: #000000;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+  /* Style for the phone icon button */
+        .phone-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: Black;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            font-size: 24px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .phone-button:hover {
+            background-color: darkblue;
+        }
+	
+.work-image {
+    width: 350px; /* Adjust the width to make them a little smaller */
+    height: auto;
+    margin: 50px;
+}
+
+/* You can add more styling as needed */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Adjust the height as needed */
+}
+
+/* styles.css */
+.work-image {
+    width: 350px; /* Adjust the width as needed */
+    height: auto;
+    margin: 20px; /* Adjust the margin as needed */
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Adjust the height as needed */
+}
+
+ /* Dropdown button */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: black;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: #f9f9f9;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: 8ac8ff;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+		
+		/* Add styles for the language selection buttons */
+#language-selection {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.language-button {
+    background-color:#fff ;
+    color:#000 ;
+    border: 1px solid #000 ;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.language-button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.language-button:hover {
+    background-color: #4169E1;
+    color: #000;
+}
+
+
+
+.container {
+  position: relative;
+}
+
+.bottom-line {
+  width: 500%;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: -200%; /* Adjust this value to position the line to the left */
+  z-index: 1;
+}
+
+.logo-container {
+  position: absolute;
+  bottom: -50px; /* Adjust this value to position the logo at the desired distance above the bottom */
+  left: 9%; /* Position the logo horizontally at the center */
+  transform: translateX(-50%);
+  z-index: 2; /* Ensure the logo appears above the line */
+}
+.logo-bottom {
+  width: 110px; /* Adjust this value to set the desired width for the logo */
+  height: auto; /* Maintain aspect ratio */
+}
+.text-at-bottom {
+  position: absolute;
+  bottom: -30px; /* Adjust this value to set the distance between text and lines */
+  left: 50%; /* Position the text horizontally at the center */
+  transform: translateX(-50%);
+}
+
+
+.service {
+  position: absolute;
+  left: 15%;  /* Adjust this value to align the text block */
+  padding-left: 30px; /* Add some padding to the left side */
+  z-index: 2; /* Ensure the text block appears above the line */ 
+  }
+.service h2 {
+  text-align: center; /* Center align the heading */
+}
+
+.service ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+
+   
+}
+
+.service li {
+  margin-bottom: 10px; /* Add some vertical spacing between list items */
+ 
+}
+
+.service a {
+  display: block; /* Make links block-level elements */
+  text-decoration: none; /* Remove default underline */
+  color: black; /* Set link color */
+}
+
+.service a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.right-text-bottom {
+  position: absolute;
+  bottom: 10;
+  left: 45%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.right-text-bottom h2 {
+  text-align: center; /* Center align the heading */
+}
+
+.right-text-bottom ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+.right-text-bottom li {
+  margin-bottom: 10px; /* Add some vertical spacing between list items */
+}
+
+.right-text-bottom a {
+  display: block; /* Make links block-level elements */
+  text-decoration: none; /* Remove default underline */
+  color: black; /* Set link color */
+}
+
+.right-text-bottom a:hover {
+  text-decoration: underline; /* Add underline on hover */
+
+}
+.center-text-bottom {
+  position: absolute;
+  bottom: 10; /* Adjust this value to set the distance from the bottom */
+  left: 68%; /* Position the text horizontally at the center */
+  transform: translateX(-50%);
+  z-index: 2; /* Ensure the text appears above the line */
+ display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  }
+.center-text-bottom h2 {
+  text-align: center; /* Center align the heading */
+}
+
+.center-text-bottom ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+.center-text-bottom li {
+  margin-bottom: 10px; /* Add some vertical spacing between list items */
+}
+
+.center-text-bottom a {
+  display: block; /* Make links block-level elements */
+  text-decoration: none; /* Remove default underline */
+  color: black; /* Set link color */
+}
+
+.center-text-bottom a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+.contact-us {
+  position: absolute;
+  bottom: 10; /* Adjust this value to set the distance from the bottom */
+  left: 88%; /* Position the text horizontally at the center */
+  transform: translateX(-50%);
+  z-index: 2; /* Ensure the text appears above the line */
+   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-us h2 {
+  text-align: center; /* Center align the heading */
+}
+
+.contact-us ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+.contact-us li {
+  margin-bottom: 10px; /* Add some vertical spacing between list items */
+}
+
+.contact-us a {
+  display: block; /* Make links block-level elements */
+  text-decoration: none; /* Remove default underline */
+  color: black; /* Set link color */
+}
+
+.contact-us a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}	
+
+
+
+
+
+
+

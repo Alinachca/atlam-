@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КАЛЬКУЛЯТОР СТОИМОСТИ</title>
+    <style>
+          body {
+            font-family: Arial, sans-serif;
+        }
+
+        .calculator {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 30px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #f5f5f5;
+        }
+		
+		
+        .cta-button:hover {
+            background-color: #0056b3 ;
+        }
+        /* ... Your existing CSS styles ... */
+    </style>
+</head>
+
+    
+<body>
+    <!-- ... Your existing navbar and background image ... -->
+<body background="C:\Users\alina\OneDrive\Рабочий стол\сайт12\source\images\photo6475748.jpg">
+    <div class="calculator">
+        <h2 id="calculator-title">КАЛЬКУЛЯТОР СТОИМОСТИ</h2>
+        <div class="form-group">
+            <label for="service" id="service-label">Выберите услугу:</label>
+            <select id="service">
+                <option value="250">Акция (мин) 400-450 €/m² Барселона</option>
+                <option value="350">Акция (сред) 600-650 €/m² Барселона</option>
+                <option value="550">Акция (макс) 800-850 €/m² Барселона</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="area" id="area-label">Укажите площадь, m²:</label>
+            <input type="number" id="area" min="0">
+        </div>
+        <div id="total">Итого: €0.00</div>
+        <div id="language-selector">
+            <label for="language" id="language-label">Выберите язык:</label>
+            <select id="language" onchange="changeLanguage()">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="ca">Català</option>
+                <option value="ru">Русский</option>
+            </select>
+        </div>
+    </div>
+
+    <footer>
+    <script>
+		  const serviceSelect = document.getElementById('service');
+        const areaInput = document.getElementById('area');
+        const totalDiv = document.getElementById('total');
+        const languageSelector = document.getElementById('language');
+        const calculatorTitle = document.getElementById('calculator-title');
+        const serviceLabel = document.getElementById('service-label');
+        const areaLabel = document.getElementById('area-label');
+        const languageLabel = document.getElementById('language-label');
+
+        serviceSelect.addEventListener('change', calculateTotal);
+        areaInput.addEventListener('input', calculateTotal);
+
+        function calculateTotal() {
+            const servicePrice = parseFloat(serviceSelect.value);
+            const area = parseFloat(areaInput.value);
+
+            if (!isNaN(servicePrice) && !isNaN(area)) {
+                const totalCost = (servicePrice * area);
+                totalDiv.textContent = `Итого: €${totalCost.toFixed(2)}`;
+            } else {
+                totalDiv.textContent = 'Итого: €0.00';
+            }
+        }
+
+        function changeLanguage() {
+            const selectedLanguage = languageSelector.value;
+            const translations = {
+                en: {
+                    calculatorTitle: 'COST CALCULATOR',
+                    serviceLabel: 'Select Service:',
+                    areaLabel: 'Enter Area, m²:',
+                    totalLabel: 'Total: €',
+                    languageLabel: 'Choose Language:',
+                    optionMin: 'Promotions (min) 400-450  €/m² Barcelona',
+                    optionAverage: 'Promotions (average) 600-650  €/m² Barcelona',
+                    optionMax: 'Promotions (max) 800-850 €/m² Barcelona',
+                },
+                es: {
+                    calculatorTitle: 'CALCULADORA DE COSTOS',
+                    serviceLabel: 'Seleccionar servicio:',
+                    areaLabel: 'Ingrese área, m²:',
+                    totalLabel: 'Total: €',
+                    languageLabel: 'Seleccionar idioma:',
+                    optionMin: 'Promociones (mínimo) 400-450  €/m² Barcelona',
+                    optionAverage: 'Promociones (media) 600-650 €/m² Barcelona',
+                    optionMax: 'Promociones (máximo) 800-850 €/m² Barcelona',
+                },
+                ca: {
+                    calculatorTitle: 'CALCULADORA DE COSTOS',
+                    serviceLabel: 'Seleccionar servei:',
+                    areaLabel: 'Introduïu àrea, m²:',
+                    totalLabel: 'Total: €',
+                    languageLabel: 'Tria l\'idioma:',
+                    optionMin: 'Promocions (mínim) 400-450 €/m² Barcelona',
+                    optionAverage: 'Promocions (mitjana) 600-650 €/m² Barcelona',
+                    optionMax: 'Promocions (màxim) 800-850  €/m² Barcelona',
+                },
+                ru: {
+                    calculatorTitle: 'КАЛЬКУЛЯТОР СТОИМОСТИ',
+                    serviceLabel: 'Выберите услугу:',
+                    areaLabel: 'Укажите площадь, m²:',
+                    totalLabel: 'Итого: €',
+                    languageLabel: 'Выберите язык:',
+                    optionMin: 'Акции (мин) 400-450 €/m² Барселона',
+                    optionAverage: 'Акции (сред) 600-650 €/m² Барселона',
+                    optionMax: 'Акции (макс) 800-850 €/m² Барселона',
+                },
+            };
+
+            calculatorTitle.textContent = translations[selectedLanguage].calculatorTitle;
+            serviceLabel.textContent = translations[selectedLanguage].serviceLabel;
+            areaLabel.textContent = translations[selectedLanguage].areaLabel;
+            totalDiv.textContent = translations[selectedLanguage].totalLabel + '0.00';
+            languageLabel.textContent = translations[selectedLanguage].languageLabel;
+            
+            // Update the options text
+            const optionMin = document.querySelector('option[value="450"]');
+            const optionAverage = document.querySelector('option[value="650"]');
+            const optionMax = document.querySelector('option[value="850"]');
+            
+            optionMin.textContent = translations[selectedLanguage].optionMin;
+            optionAverage.textContent = translations[selectedLanguage].optionAverage;
+            optionMax.textContent = translations[selectedLanguage].optionMax;
+        }
+
+        // Initialize with the default language (English)
+        changeLanguage();
+    </script>
+</body>
+</html>

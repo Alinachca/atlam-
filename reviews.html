@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы клиентов</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        #review-container {
+            width: 70%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f7f7f7;
+        }
+
+        #review-form {
+            text-align: left;
+        }
+
+        .review {
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+            background-color: #fff;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<div>
+        <button class="language-button" onclick="changeLanguage('es')">Español</button>
+        <button class="language-button" onclick="changeLanguage('ca')">Català</button>
+        <button class="language-button" onclick="changeLanguage('en')">English</button>
+        <button class="language-button" onclick="changeLanguage('ru')">Русский</button>
+    </div>
+     <h1 id="reviews-heading">Отзывы клиентов</h1>
+
+    <div id="review-container">
+        <h2 id="leave-review-heading">Оставить отзыв</h2>
+        <form id="review-form">
+            <label for="name" id="name-label">Ваше Имя:</label>
+            <input type="text" id="name" required><br><br>
+            <label for="review" id="review-label">Ваш отзыв:</label>
+            <textarea id="review" rows="4" required></textarea><br><br>
+            <button type="button" id="submit-review">Отправить отзыв</button>
+        </form>
+
+       <h2 id="customer-reviews-heading">Opiniones de clientes</h2>
+        <div id="reviews"></div>
+    </div>
+
+    <script>
+	 let currentLanguage = 'en'; // Default language
+function changeLanguage(language) {
+            // Implement language change logic here
+            // Update the static text content based on the selected language
+
+            const translations = {
+                'es': {
+                    'submitReview': 'Enviar reseña',
+                    'reviewsHeading': 'Opiniones de clientes',
+                    'leaveReviewHeading': 'Dejar una reseña',
+                    'nameLabel': 'Tu Nombre:',
+                    'reviewLabel': 'Tu Reseña:'
+                },
+                'ca': {
+                    'submitReview': 'Enviar ressenya',
+                    'reviewsHeading': 'Opinions de clients',
+                    'leaveReviewHeading': 'Deixar una ressenya',
+                    'nameLabel': 'El Teu Nom:',
+                    'reviewLabel': 'La Teva Ressenya:'
+                },
+                'en': {
+                    'submitReview': 'Submit Review',
+                    'reviewsHeading': 'Customer Reviews',
+                    'leaveReviewHeading': 'Leave a Review',
+                    'nameLabel': 'Your Name:',
+                    'reviewLabel': 'Your Review:'
+					
+                },
+                'ru': {
+                    'submitReview': 'Отправить отзыв',
+                    'reviewsHeading': 'Отзывы клиентов',
+                    'leaveReviewHeading': 'Оставить отзыв',
+                    'nameLabel': 'Ваше Имя:',
+                    'reviewLabel': 'Ваш отзыв:'
+                }
+            };
+
+            const submitReviewButton = document.getElementById('submit-review');
+            const reviewsHeading = document.getElementById('reviews-heading');
+            const leaveReviewHeading = document.getElementById('leave-review-heading');
+            const nameLabel = document.getElementById('name-label');
+            const reviewLabel = document.getElementById('review-label');
+
+            submitReviewButton.innerText = translations[language]['submitReview'];
+            reviewsHeading.innerText = translations[language]['reviewsHeading'];
+            leaveReviewHeading.innerText = translations[language]['leaveReviewHeading'];
+            nameLabel.innerText = translations[language]['nameLabel'];
+            reviewLabel.innerText = translations[language]['reviewLabel'];
+
+            currentLanguage = language;
+        }
+    
+        document.addEventListener('DOMContentLoaded', () => {
+            // Load reviews from local storage
+            const reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+
+            // Function to add a new review
+            function addReview(name, review) {
+                const reviewElement = document.createElement('div');
+                reviewElement.className = 'review';
+                reviewElement.innerHTML = `<strong>${name}:</strong> ${review}`;
+                document.getElementById('reviews').appendChild(reviewElement);
+            }
+
+            // Event listener for the "Submit Review" button
+            document.getElementById('submit-review').addEventListener('click', () => {
+                const name = document.getElementById('name').value;
+                const review = document.getElementById('review').value;
+
+                if (name && review) {
+                    addReview(name, review);
+                    reviews.push({ name, review });
+                    localStorage.setItem('reviews', JSON.stringify(reviews));
+                    document.getElementById('review-form').reset();
+                }
+            });
+
+            // Load initial reviews
+            reviews.forEach((review) => {
+                addReview(review.name, review.review);
+            });
+        });
+    </script>
+</body>
+</html>
